@@ -140,7 +140,10 @@ ul>li:hover {
 .hero-info>button:hover {
     background: radial-gradient(yellow, orange);
     color: black;
-    transform: translateY(-5px)
+    transform: translateY(-5px);
+    box-shadow: 0px -2px 50px 25px rgba(201, 206, 30, 0.5);
+    -webkit-box-shadow: 0px -2px 50px 25px rgba(201, 206, 30, 0.5);
+    color:purple;
 }
 
 
