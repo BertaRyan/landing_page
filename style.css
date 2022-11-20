@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: hsl(319, 96%, 21%);
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    flex: 1 1 auto;
+    color: white;
+}
+
+.logo>h1 {
+    font-size: 2em;
+}
+
+.logo>h1,
+.logo>.logo-image {
+    flex: 0 1 auto;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    margin-right: 40px;
+}
+
+ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    border: 2px solid white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    box-shadow: 12px 13px 19px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 12px 13px 19px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 12px 13px 19px rgba(0, 0, 0, 0.5);
+    transition:1s;
+}
+
+ul>li:hover {
+    background: radial-gradient(yellow, purple);
+    scale: 1.3em;
+    padding: 2px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 12px 13px 19px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 12px 13px 19px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 12px 13px 19px rgba(0, 0, 0, 0.5);
+    transform: scale(1.3);
+    transform: translateY(-10px);
+}
+
+/*
+  ========================================
+  
+  NAV BAR     ^
+  =======================================
+  */
+
+
+.hero {
+    height: calc(100vh - 100px);
+    background-image: url(https://images.unsplash.com/photo-1620120966883-d977b57a96ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80), none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(11, 11, 11, 0.63);
+}
+
+@media screen and (min-width:0) and (max-width:1200px) {
+
+    .hero-content {
+        display: block;
+    }
+}
+
+.hero-image {
+    flex: 0 1 50%;
+    margin-left: 20%;
+}
+
+.hero-image>img {
+    width: 100%;
+
+}
+
+.hero-info {
+    flex: 1 1 50%;
+    color: white;
+    padding: 50px;
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-info p {
+    font-size: 1.3em;
+}
+
+.hero-info button {
+    cursor: pointer;
+    width: 30%;
+    padding: 10px 0;
+    margin: 0 auto;
+    background-color: hsl(319, 96%, 21%);
+    color: white;
+    box-shadow: 6px 7px 38px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 6px 7px 38px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 6px 7px 38px rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+.hero-info>button:hover {
+    background: radial-gradient(yellow, orange);
+    color: black;
+    transform: translateY(-5px)
+}
+
+
+
+/*
+=================================
+
+            HERO SECTION ^
+
+==================================
+*/
+
+
+.services-section {
+    color: black;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.services-section>h1 {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+    border-bottom: 3px solid black;
+    padding:10px 0;
+}
+
+.service-container {
+    height: 60vh;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.services {
+    color: white;
+    flex-basis: 23%;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 15px;
+    border: 3px solid rgba(rgb(38, 38, 38), rgb(18, 18, 18), rgb(31, 31, 31), .5);
+    min-height: 300px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.281);
+    transition: 1s;
+}
+
+.service-img>i {
+    font-size: 2em;
+    border: 2px solid rgba(black, black, black, .8);
+    background: linear-gradient(white, purple);
+    padding: 40px;
+    border-radius: 50%;
+    filter: opacity(.8)
+}
+
+.service-content h1 {
+    margin-bottom: 15px;
+}
+
+.service-content {
+    margin-bottom: 20px;
+}
+
+.services:hover{
+    transform:scale(1.1);
+    box-shadow: -2px -1px 50px 25px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: -2px -1px 50px 25px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* 
+===================================
+            SERVICES^
+===================================
+*/
+
+.quote{
+    height:50vh;
+    background:radial-gradient(yellow, purple);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.quote-contents{
+    border-radius:20px;
+    width:80%;
+    height:auto;
+    font-size:3em;
+    padding:20px;
+    color:white;
+    margin:0 auto;
+    
+}
+
+.signature{
+    position:relative;
+    left:40%;
+    bottom:25%;
+    font-size:1.5em;
+    color:white;
+    text-decoration:underline;
+}
+
+/*
+=====================================
+                QOUTE ^ 
+=====================================
+*/
+
+.cta-container{
+    height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+}
+
+.cta{
+    display:flex;
+    flex-basis:60%;
+    height:auto;
+    align-items:center;
+    justify-content:space-between;
+    color:black;
+    background-color:rgb(184, 181, 181);
+    padding:120px 40px;
+    border-radius:30px;
+    }
+
+.cta-content{
+    
+    flex:1 0 60%;
+    margin:0 10px 0px 0;
+    
+}
+
+.cta-content > h1{
+    font-size:2em;
+    text-align:left;
+    color:white;
+    text-shadow:5px 5px 10px purple;
+    margin-bottom:20px;
+}
+
+.cta-content > p {
+    font-size:1.5em;
+    color:white;
+}
+
+.cta-button{
+    text-align:right;
+    flex:1 1 50%;
+}
+
+.cta-button > button{
+    color:white;
+    padding:10px 60px;
+    border-radius:10px;
+    background:hsl(319, 91%, 31%);
+    border:2px solid white;
+    box-shadow: 11px 12px 22px -2px rgba(255, 255, 255, 0.5);
+-webkit-box-shadow: 11px 12px 22px -2px rgba(255, 255, 255, 0.5);
+transition:1s;
+}
+
+.cta-button > button:hover{
+    background: radial-gradient(yellow,orange);
+    color:purple;
+    box-shadow: 0px -2px 50px 25px rgba(201, 206, 30, 0.5);
+-webkit-box-shadow: 0px -2px 50px 25px rgba(201, 206, 30, 0.5);
+}
+
+/*
+===================================
+                 CTA ^
+ ==================================
+  */
+
+  .footer{
+    display:flex;
+    justify-content:center;
+    background: hsl(319, 96%, 21%);
+    color:white;
+    padding:25px 0;
+  }
+
+
